@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'city_detail_page.dart';
 
 class CityListPage extends StatelessWidget {
   const CityListPage({super.key});
@@ -37,6 +38,11 @@ Widget build(BuildContext context) {
             trailing: const Icon(Icons.navigate_next),
             onTap: () {
               // TODO: 詳細画面に遷移する
+               Navigator.of(context).push<void>(
+                MaterialPageRoute(
+                  builder: (context) => CityDetailPage(city: city),
+                ),
+              );
             },
           ),
       ],
