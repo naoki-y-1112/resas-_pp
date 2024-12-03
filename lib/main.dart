@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/city_list_page.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:myapp/city_list_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: [
-        Locale('ja'),
-      ],
+      supportedLocales: [Locale('ja')],
       home: CityListPage(),
     );
   }
